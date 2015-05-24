@@ -34,7 +34,7 @@ import java.util.List;
  * @author Samael Wang <freesamael@gmail.com>
  */
 public class ObserverSample {
-
+//記得寫註解
     public static void main(String[] args) {
         // Initialize MVC and Window objects.
         Window window = new Window();
