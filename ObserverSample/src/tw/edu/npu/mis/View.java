@@ -35,7 +35,7 @@ public class View implements Observer{
     private final String mName;
     private final Window mWindow;
     private final Model mModel;
-
+    String s = "";
     public View(String name, Window window, Model model) {
         mName = name;
         mWindow = window;
@@ -53,8 +53,9 @@ public class View implements Observer{
      * Show the content of the model on the console.
      */
     public void onDraw() {
+          if(!s.equals(mModel.getData())) System.out.println("View (" + mName + "): " + mModel.getData());
+          s = mModel.getData();
         
-        System.out.println("View (" + mName + "): " + mModel.getData());
     }
 
 }
