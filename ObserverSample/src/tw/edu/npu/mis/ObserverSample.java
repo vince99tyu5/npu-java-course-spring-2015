@@ -35,8 +35,12 @@ import java.util.List;
  */
 public class ObserverSample {
 //記得寫註解
+    
     public static void main(String[] args) {
         // Initialize MVC and Window objects.
+        /**
+         * 註解
+         */
         Window window = new Window();
         Model model = new Model();
         Controller controller = new Controller(model);
@@ -44,7 +48,7 @@ public class ObserverSample {
         views.add(new View("View 1", window, model));
         views.add(new View("View 2", window, model));
         views.add(new View("View 3", window, model));
-
+　　　　 views.add(new View("Hello", window, model));
         // Start the event loop.
         window.startEventLoop(controller, views);
     }
