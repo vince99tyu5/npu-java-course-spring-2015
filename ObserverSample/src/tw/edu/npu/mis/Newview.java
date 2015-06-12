@@ -33,7 +33,6 @@ public class Newview implements Observer {
        private final String mName;
     private final Window mWindow;
     private final Model mModel;
-    String s ="";
 
     public Newview(String name, Window window, Model model) {
         mName = name;
@@ -52,7 +51,7 @@ public class Newview implements Observer {
      * Show the content of the model on the console.
      */
     public void onDraw() {
-        if(!s.equals(mModel.getData()))  System.out.println("View2 (" + mName + "): " +new StringBuilder(mModel.getData()).reverse());
-       s = mModel.getData();
+        
+        System.out.println("View2 (" + mName + "): " +new StringBuilder(mModel.getData()).reverse());
     }
 }
